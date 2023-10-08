@@ -1,0 +1,700 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://kit.fontawesome.com/5189f7fc45.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            top: 0;
+            left: 0;
+        }
+
+        body {
+            width: fit-content;
+        }
+
+        /* @media {
+            
+        } */
+        .img1 {
+
+            height: 100vh;
+            background-size: cover;
+            width: 100vw;
+        }
+
+        .navbar {
+            position: fixed;
+            width: 100vw;
+            z-index: 1;
+        }
+
+        .aa {
+
+            font-weight: bold;
+            font-size: 70px;
+        }
+
+        .ab {
+            color: whi;
+            z-index: 0;
+            margin-top: -450px;
+
+        }
+
+        .para1 {
+            align-items: center;
+            margin-top: 15px;
+            text-decoration: white;
+
+        }
+
+        .para2 {
+            align-items: center;
+            margin-top: -5px;
+
+        }
+
+        .zia {
+            color: rgba(9, 128, 226, 0.993) !important;
+        }
+
+        .nav-link.sa:hover {
+            background-color: rgba(9, 128, 226, 0.993) !important;
+            color: black !important;
+            transition: 0.1s;
+        }
+
+        .nav-link.sa:active {
+            transform: scale(0.8);
+        }
+
+        .butn1 {
+            color: rgba(0, 0, 0, 0.993);
+            background-color: rgb(231, 67, 67);
+            margin-top: 10px;
+
+            border-radius: 2rem;
+            width: 100px;
+
+        }
+
+        .butn1:hover {
+            background-color: rgba(9, 128, 226, 0.993) !important;
+            color: black !important;
+            transition: 0.1s;
+        }
+
+        .butn1:active {
+            transform: scale(0.8);
+        }
+
+        .dropdown-menu {
+            background-color: rgba(0, 0, 0, 0.192);
+        }
+
+        .dropdown-item {
+            color: rgba(9, 128, 226, 0.993);
+        }
+
+        .about {
+            height: 100vh;
+            width: 100vw;
+        }
+
+        .hr1 {
+            background-color: rgba(9, 128, 226, 0.993) !important;
+            height: 0px;
+            width: 5px;
+            border: 2px solid black;
+            z-index: 1;
+        }
+
+        .zhsan {
+
+            padding-top: 70px;
+
+        }
+
+        .forms {
+
+            padding-top: 70px;
+        }
+
+        .par {
+            color: black;
+            font-family: 'Patua One', cursive;
+            font-size: 70px;
+        }
+
+        .par2 {
+            text-align:justify;
+            color: rgba(9, 128, 226, 0.993) !important;
+            margin-top: 25px;
+            margin-right: auto;
+
+        }
+
+        .btn3 {
+            color: rgba(9, 128, 226, 0.993) !important;
+            background-color: black;
+            border: none;
+            height: 30px;
+            width: 135px;
+            text-align: center !important;
+            margin-top: 10px;
+        }
+
+        .btn3:hover {
+            background-color: rgba(9, 128, 226, 0.993) !important;
+            color: black !important;
+            transition: 0.3s;
+        }
+
+        .btn3:active {
+            transform: scale(0.8);
+        }
+
+        .section1 {
+            height: fit-content;
+
+            background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(images/creative-wallpaper-with-white-shapes.jpg);
+
+            background-size: cover !important;
+            z-index: 1;
+        }
+
+        .camera {
+            margin-top: -240px;
+            position: relative;
+        }
+
+        .movie {
+            margin-top: -190px;
+            position: relative;
+        }
+
+        .big {
+            margin-top: -260px;
+
+            position: relative;
+        }
+
+        .mainhe {
+            color: black;
+            font-family: 'Patua One', cursive;
+        }
+
+        .mainh3 {
+            font-size: 20px;
+            margin-left: 80px;
+        }
+
+        .mainh4 {
+            font-size: 20px;
+
+            padding-top: 10px;
+            margin-left: 80px;
+        }
+
+        .mainh5 {
+            font-size: 20px;
+            padding-top: 10px;
+            margin-left: 80px;
+        }
+
+        .p1 {
+            padding-left: 80px;
+        }
+
+        .p2 {
+            padding-left: 80px;
+        }
+
+        .p3 {
+            padding-left: 80px;
+        }
+
+        .under {
+            color: rgba(9, 128, 226, 0.993);
+        }
+
+        .section2 {
+            background-image: url(hamburger-494706_1280.jpg);
+            height: fit-content;
+            z-index: 1;
+        }
+
+        .counter-section {
+            color: white;
+
+        }
+
+        .counter-box h1 {
+            font-size: 70px;
+        }
+
+        .counter-box {
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+
+        .section3 {
+            height: fit-content;
+            background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(images/creative-wallpaper-with-white-shapes.jpg);
+            background-size: cover !important;
+            z-index: 1;
+
+        }
+
+
+        .imgg {
+
+            height: 200px;
+            position: relative;
+            border-radius: 2rem 2rem 0 0;
+
+        }
+
+        .card2 {
+            border: 1px solid black;
+            border-radius: 2rem 2rem;
+            box-shadow: 10px 10px 10px 0 black;
+            align-items: center;
+            background-color: black;
+            color: rgba(9, 128, 226, 0.993);
+            margin-bottom: 20px;
+
+        }
+
+        .card2:hover {
+            transform: scale(1.05);
+            background-color: rgba(9, 128, 226, 0.993);
+            color: black;
+        }
+
+        .ull {
+            margin-bottom: 50px;
+        }
+
+        .btn93 {
+            background-color: white;
+            color: rgba(9, 128, 226, 0.993);
+            text-align: center;
+        }
+
+        h5 {
+            color: white;
+            text-align: center;
+            font-weight: 800;
+        }
+
+        .card-text {
+            text-align: center;
+        }
+
+        .type {
+            font-family: 'Patua One', cursive;
+            text-align: center;
+            color: rgba(9, 128, 226, 0.993);
+            font-size: 50px;
+
+        }
+
+        .h1an {
+            font-family: 'Patua One', cursive;
+            text-align: center;
+            padding-top: 70px;
+            padding-bottom: 50px;
+            font-size: 50px;
+            font-weight: 600;
+        }
+
+        .section4 {
+            background-image: url(shutterstock_407554567.webp);
+            height: fit-content;
+            z-index: 1;
+            padding-top: 40px;
+        }
+
+        .fr2 {
+
+            background-color: white;
+            margin-top: 30px;
+        }
+
+        .fr1 {
+            margin-top: 30px;
+        }
+
+        .coh1 {
+            color: rgba(9, 128, 226, 0.993);
+            font-family: 'Patua One', cursive;
+            margin-top: 30px;
+        }
+
+        .coh2 {
+            color: black;
+            margin-top: 30px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: x-large;
+        }
+
+        .form-control.am {
+            border: none !important;
+            border-bottom: 2px solid black !important;
+            margin-top: 30px;
+        }
+
+        .btn33 {
+            color: rgba(9, 128, 226, 0.993);
+            background-color: black;
+            margin-top: 20px;
+        }
+
+        .btn33:hover {
+            background-color: rgba(9, 128, 226, 0.993);
+            color: black;
+        }
+
+        .gg {
+            margin-top: -10px;
+        }
+
+        .h33 {
+            color: rgba(9, 128, 226, 0.993);
+            font-family: 'Patua One', cursive;
+            font-size: x-large;
+            margin-left: 70px;
+            margin-top: -55px;
+        }
+
+        .p33 {
+            color: white;
+            margin-left: 70px;
+
+        }
+
+        .ic33 {
+            margin-top: 10px;
+        }
+
+        .p34 {
+            color: white;
+            font-size: medium;
+            margin-top: 20px;
+        }
+
+        .gh1 {
+            padding-bottom: 30px;
+        }
+
+        .section5 {
+            /* background:linear-gradient(to right,rgba(9, 128, 226, 0.993),white); */
+            background-color: rgba(9, 128, 226, 0.993);
+            height: fit-content;
+            z-index: 1;
+            padding-top: 60px;
+
+
+        }
+
+        .h44 {
+            color: white;
+            font-weight: bold;
+            font-size: x-large;
+        }
+
+        .p44 {
+            font-size: smaller;
+            color: white;
+        }
+
+        .h45 {
+            color: white;
+            font-weight: bold;
+            font-size: medium;
+        }
+
+        .p45 {
+            font-size: smaller;
+            color: white;
+        }
+
+        .an {
+            background-color: transparent !important;
+            border: transparent !important;
+            border-bottom: 2px solid white !important;
+            color: white !important;
+        }
+
+        .an::placeholder {
+            color: white;
+        }
+
+        .social44 i {
+            border-radius: 50%;
+            text-align: center;
+            line-height: 40px;
+            font-size: 40px;
+            height: 20px;
+            width: 50px;
+            margin-top: 25px;
+            color: black;
+        }
+
+        .social44 i:hover {
+            color: white;
+        }
+
+        hr {
+            width: 90%;
+            border: 0;
+            border-bottom: 5px solid white;
+            margin: 20px auto;
+        }
+
+        .copyright {
+            color: white;
+            padding-bottom: 10px;
+        }
+
+        .under44 {
+            width: 20%;
+            height: 5px;
+            background: black;
+            border-radius: 3px;
+            position: relative;
+            top: 8px;
+            left: 0;
+            z-index: 0;
+            overflow: hidden;
+        }
+
+        .under44 span {
+            width: 15px;
+            height: 100%;
+            background: #fff;
+            border-radius: 3px;
+            position: absolute;
+            top: 0;
+            left: 5px;
+            animation: moving 2s linear infinite;
+        }
+
+        @keyframes moving {
+            0% {
+                left: -20px;
+            }
+
+            100% {
+                left: 100%;
+            }
+        }
+
+        .xection6 {
+            height: fit-content;
+            background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(images/creative-wallpaper-with-white-shapes.jpg);
+            background-size: cover !important;
+            z-index: 1;
+
+        }
+    </style>
+</head>
+
+<body>
+    
+
+        <!-- <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div>
+        Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+      </div>
+      <div class="dropdown mt-3">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
+          Dropdown button
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+        </ul>
+      </div>
+    </div>
+  </div> -->
+    </section>
+
+    <section class="section4" id="cont4">
+        <div class="container-sm gh1 ">
+            <center>
+                <h1 class="coh1">CONTACT US</h1>
+                <p class="p34">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, ad. Excepturi, aliquid.
+                    Quasi necessitatibus, similique consectetur totam unde quae ea aspernatur vitae! Illo, quasi.</p>
+            </center>
+            <div class="row gx-5">
+                <div class=" col-md-6 fr1" data-aos="fade-left">
+
+                    <lord-icon class="ic33" src="https://cdn.lordicon.com/zzcjjxew.json" trigger="loop-on-hover"
+                        colors="primary:#ffffff,secondary:#66a1ee" style="width:70px;height:70px">
+                    </lord-icon>
+                    <h1 class="h33">
+                        Address
+                    </h1>
+                    <p class="p33">4562 Sugar Camp Road,Los Angeles,America</p><br>
+                    <lord-icon src="https://cdn.lordicon.com/hciqteio.json" trigger="loop-on-hover"
+                        colors="primary:#ffffff,secondary:#66a1ee" style="width:70px;height:70px">
+                    </lord-icon>
+                    <h1 class="h33">
+                        Phone
+                    </h1>
+                    <p class="p33">507-475-9049</p><br>
+
+                    <lord-icon src="https://cdn.lordicon.com/rhvddzym.json" trigger="loop-on-hover"
+                        colors="primary:#ffffff,secondary:#66a1ee" style="width:70px;height:70px">
+                    </lord-icon>
+                    <h1 class="h33">
+                        Email
+                    </h1>
+                    <p class="p33">FoodsForEat123@gmail.com.net</p>
+                </div>
+                <div class=" col-md-6 fr2" data-aos="fade-right">
+                    <h1 class="coh2">
+                        Send Message
+                    </h1>
+                    <form class="row gx-5 gg">
+                        <div class="col-12">
+
+                            <input type="email" class="form-control am" id="inputEmail4" placeholder="Full Name">
+                        </div>
+                        <div class="col-12">
+
+                            <input type="text" class="form-control am" id="inputAddress" placeholder="Email Address">
+                        </div>
+                        <div class="col-12">
+
+                            <input type="text" class="form-control am" id="inputCity" placeholder="Type Your Message">
+                        </div>
+
+                        <div class="col-12">
+                            <button type="submit" class="btn btn33">Submit</button>
+                        </div>
+                    </form>
+                    <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d28934.007297904638!2d67.06798845!3d24.974587999999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1625499326972!5m2!1sen!2s" allowfullscreen="" loading="lazy"></iframe> -->
+                </div>
+
+
+
+            </div>
+        </div>
+        </div>
+
+
+    </section>
+
+    
+
+    <script>
+
+    </script>
+    <script>
+        jQuery(document).ready(function ($) {
+            $('.counter').counterUp({
+                delay: 10,
+                time: 2000
+            });
+        });
+    </script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="Counter-Up-master/jquery.counterup.min.js"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdn.lordicon.com/libs/frhvbuzj/lord-icon-2.0.2.js"></script>
+    <script src="https://cdn.lordicon.com/libs/frhvbuzj/lord-icon-2.0.2.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            offset: 100,
+
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('.card2').hover(
+                function () {
+                    $(this).animate({
+                        marginTop: "-=3%",
+                    }, 200);
+                },
+                function () {
+                    $(this).animate({
+                        marginTop: "0%"
+                    }, 200);
+                }
+            );
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('.fr2').hover(
+                function () {
+                    $(this).animate({
+                        marginTop: "-=1%",
+                    }, 200);
+                },
+                function () {
+                    $(this).animate({
+                        marginTop: "0%"
+                    }, 200);
+                }
+            );
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('.fr1').hover(
+                function () {
+                    $(this).animate({
+                        marginTop: "-=1%",
+                    }, 200);
+                },
+                function () {
+                    $(this).animate({
+                        marginTop: "0%"
+                    }, 200);
+                }
+            );
+        });
+    </script>
+    <script src="typed.js-master/lib/typed.js"></script>
+    <script>
+        var typed = new Typed('.type', {
+            strings: ['Fast Food..', 'Bar B Que..', 'Chinese..', 'Continental..', 'And Many More..'],
+            typeSpeed: 60,
+            backSpeed: 60,
+            loop: true,
+        });
+    </script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
